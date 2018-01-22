@@ -57,7 +57,7 @@ namespace MembersConso
             txtFirstName.Text = LstMembers[position].FirstName;
 
             TextView txtAmount = row.FindViewById<TextView>(Resource.Id.txtAmount);
-            txtAmount.Text = LstMembers[position].Amount; //??? ConvertTO...
+            txtAmount.Text = Convert.ToString(LstMembers[position].Amount);
 
             return row;
         }
